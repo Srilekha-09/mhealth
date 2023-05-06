@@ -48,12 +48,12 @@ We have created a Wearable belt ,allowing for real-time monitoring of the patien
 
 ## Steps to Follow:
 
-#### Connect flex Sensor to Raspberry Pi Using an extension Board attached to raspberry Pi(With proper circuits) 
+#### 1)Connect flex Sensor to Raspberry Pi Using an extension Board attached to raspberry Pi(With proper circuits) 
  
-#### Install Pyserial Library using the following command
+#### 2)Install Pyserial Library using the following command
 ![image](https://user-images.githubusercontent.com/113662146/226814998-9476c6da-e1a9-47ea-bd54-fbddf19ba34c.png)
 
-#### Paste This code snippet(LOGIC) in the raspberry Pi environment that You are running
+#### 3)Paste This code snippet(LOGIC) in the raspberry Pi environment that You are running
 Full code to be accessed in Github Repositry
 
 while True:
@@ -73,19 +73,19 @@ while True:
     # Send  value  Android 
     ser.write(str(analoge).encode('utf-8'))
     
- #### create a SPP on Android device.
+ #### 4)create a SPP on Android device.
  ```
     Mac address
     rfcomm0 SerialPort for communication
     
     ![image](https://user-images.githubusercontent.com/113662146/226815983-6c3df99b-0bb9-4976-8c11-8dbe872c901a.png)
 ```
-#### connection establishment on android device:
+#### 5)connection establishment on android device:
 
  ![image](https://user-images.githubusercontent.com/113662146/226824961-aaaf6b1a-b509-4631-8598-4c85c9effe86.png)
  //Import The IO package and UUID package to remove error
 
-### Now Intel One API PART and Android Application 
+### 6)Now Intel One API PART and Android Application 
 
 #### Use of math kernal Library.
 ```
@@ -114,64 +114,17 @@ root = tree.getroot()
 angle_value = float(root.find('angle').text)
 messages = [elem.text for elem in root.findall('messages/message')]
 ```
-#### Determine the appropriate messages for the angle value using OpenVINO.
-```
-ie = IECore()
-model_xml = "angle_model.xml"
-model_bin = "angle_model.bin"
-net = ie.read_network(model=model_xml, weights=model_bin)
-exec_net = ie.load_network(network=net, device_name="CPU")
-input_blob = next(iter(net.input_info))
-output_blob = next(iter(net.outputs))
-angle_tensor = np.array([angle_value], dtype=np.float32)
-output = exec_net.infer(inputs={input_blob: angle_tensor})[output_blob]
-angle_index = int(np.round(output[0]))
-angle_messages = messages[angle_index*4:angle_index*4+4]
-pca_model = pca(n_components=3, svd_solver='randomized')
-X = np.array([list(map(float, message.split(','))) for message in angle_messages])
-X_centered = X - np.mean(X, axis=0)
-X_transformed = pca_model.fit_transform(X_centered)
-S, V, _ = svd(X_transformed, computeU=False)
-selected_message_index = np.argmax(V)
-```
+#### Determine the appropriate messages for the angle value using SYCL.
+
 
 #### Now to print the messages in android app.
 
 
-Compile the C++ code of the OpenVINO and daal4py libraries using the Android NDK.
+Compile the C++ code of the SYCL library using the Android NDK.
 -Documentation for thee above
 https://developer.android.com/ndk/guides/
 -Create a JNI wrapper class in your Android app that defines the native methods you want to call from your Java code.
 
-#### C++ Code.
-
-```
-InferenceEngine::Core ie;
-InferenceEngine::CNNNetReader net_reader;
-net_reader.ReadNetwork(xml_file);
-net_reader.ReadWeights(bin_file);
-InferenceEngine::CNNNetwork network = net_reader.getNetwork();
-auto exec_net = ie.LoadNetwork(network, "CPU");
-auto input_info = network.getInputsInfo().begin()->second;
-auto output_info = network.getOutputsInfo().begin()->second;
-InferenceEngine::Blob::Ptr angle_tensor = InferenceEngine::make_shared_blob<float>({InferenceEngine::Precision::FP32, {1}});
-angle_tensor->allocate();
-float *angle_data = angle_tensor->buffer().as<float *>();
-angle_data[0] = angle_value;
-InferenceEngine::BlobMap inputs;
-inputs[input_info->name()] = angle_tensor;
-InferenceEngine::OutputsDataMap outputs_info(network.getOutputsInfo());
-auto output_name = outputs_info.begin()->first;
-InferenceEngine::BlobMap output;
-output[output_name] = InferenceEngine::make_shared_blob
- ```
- 
- #### java String Conversion.
- ```
-const char *xml_file = env->GetStringUTFChars(xmlFile, nullptr);
-const char *bin_file = env->GetStringUTFChars(binFile, nullptr);
-const char *messages_xml = env->GetStringUTFChars(messagesXml, nullptr);
-  ```
 
 ## Conclusion
 
@@ -194,6 +147,7 @@ const char *messages_xml = env->GetStringUTFChars(messagesXml, nullptr);
 
 ### OutPut Video
 https://user-images.githubusercontent.com/113662146/226954722-c03ed411-ae9f-40d9-b21f-5ad26446a6bf.mp4
+
 
 
 
