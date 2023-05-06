@@ -6,35 +6,38 @@
 
 ####Madupu Srilekha
 
+![image](https://user-images.githubusercontent.com/113164986/236612911-a2bae968-1b7d-4bba-98de-138fd7bd7916.png)
 
- 
-![image](https://user-images.githubusercontent.com/113662146/226708692-e0bafd9b-0712-4c02-a875-4214c27ca899.png)
-### TOPIC: SmartBelt With Android Access(Intel One-API Tools) For LUMBAR SPONDYLOSIS & all common back and spinal problems
+
+
+
+### TOPIC: Mhealth app with SmartBelt (Intel One-API Tools) For spinal problems
 
 We have created a Wearable belt ,allowing for real-time monitoring of the patient's spinal activity and motions. An Android or iOS app will be used to gather, analyze, and send this data to the patient, the doctor, and any relevant family members. It displays details about the bend angle, strain, and pressure applied. provide specific stretching and exercise routines to improve and treat their ailment. By consistently keeping an eye on things and giving feedback, we can help stop the spine from suffering more harm while also promoting healing and recovery.If the patient has been dealing with significant pain and movement abnormalities, the devices implanted inside the belt can transfer vibrations or electric impulses to the spines. it functions as treatment.
 
 #### [Medium Blog Link of Our Project ](https://medium.com/@srilekhamadupu2002/mhealth-app-for-undeserved-communities-mainly-for-spinal-cord-issues-4614de2e50b2)
 
 
-![image](https://user-images.githubusercontent.com/113662146/226709926-1b960a3c-57e0-4e46-a350-11fb76b81f74.png)
+![image](https://user-images.githubusercontent.com/113164986/236612968-47613908-3edb-47e0-9e69-865aff54c91d.png)
+
 
 ### Technologies Used:
 
-![image](https://user-images.githubusercontent.com/113662146/226709852-51ac94fc-8ca4-4eb6-9328-57f464b3bf58.png)
-![image](https://user-images.githubusercontent.com/113662146/226709420-45ca713e-f7e5-466b-a4b9-8a55e525b18d.png)
-![image](https://user-images.githubusercontent.com/113662146/226710569-d04e70cc-b496-43ae-8363-ffd72e301d79.png)
-![image](https://user-images.githubusercontent.com/113662146/226710315-61535777-8ae6-4909-9213-2c5832768240.png)
+![image](https://user-images.githubusercontent.com/113164986/236613018-799c351f-878e-4346-8ecd-52fb89197d22.png)
 
 
-#### RASPBERRY PI
-#### INTEL ONEAPI TOOLKITS(Math kernel library,AI analytics toolkit,and Basic Python toolkit)
-#### Math kernel library- Mathematical Calculations for average values of the sensor
-#### AI analytics toolkit- For Data Analysis and Finding the Accurate rate of movements and remedies
-#### Use daal4py to improve accuracy and performance of message classification
+
+#### 1) RASPBERRY PI
+#### 2) INTEL ONEAPI TOOLKITS(Math kernel library,AI analytics toolkit,and Basic Python toolkit)
+#### 3) Math kernel library- Mathematical Calculations for average values of the sensor
+#### 4) AI analytics toolkit- For Data Analysis and Finding the Accurate rate of movements and remedies
+#### 5) Use daal4py to improve accuracy and performance of message classification
+#### 6) Use SYCL library
 
 ##### //Towards Advanced Level we have to use-Intel® oneAPI Deep Neural Networks Library & Intel® oneAPI Collective Communications Library
 
-![image](https://user-images.githubusercontent.com/113662146/226713324-d1f659fa-69f3-4256-b6e3-da6d1cbad99a.png)
+![image](https://user-images.githubusercontent.com/113164986/236613119-363b5c89-5d2a-428d-b332-7652626a94a6.png)
+
 
 #### The solution for the problem has been found and we have made teh protoype,Now if we take it to advanced stages the application will be numerous
 ![image](https://user-images.githubusercontent.com/113662146/226716356-f075e7fc-b801-4608-8f60-b41ea8ed434d.png)
@@ -181,23 +184,18 @@ const char *messages_xml = env->GetStringUTFChars(messagesXml, nullptr);
 
 ![sample 1 iot](https://user-images.githubusercontent.com/113662146/226892845-5def573f-55d5-4b9c-9310-a3783314b8b5.jpg)
 ![sample iot 2](https://user-images.githubusercontent.com/113662146/226892817-9cbad78b-10ff-4964-bd87-98f2cc4a6cbf.jpg)
-![WhatsApp Image 2023-03-22 at 6 02 49 PM](https://user-images.githubusercontent.com/113662146/226906434-69ca1b49-dfe8-47b9-974b-2a1545ebb17a.jpeg)
  
  #hardware
-![WhatsApp Image 2023-03-22 at 5 57 14 PM](https://user-images.githubusercontent.com/113662146/226906458-35311bae-9e23-43f1-b567-67bf13afe47a.jpeg)
-![20230322_152229](https://user-images.githubusercontent.com/113662146/226906510-b60d1e32-2d84-4228-8f4d-5b95566926ed.jpg)
-![WhatsApp Image 2023-03-22 at 5 59 38 PM](https://user-images.githubusercontent.com/113662146/226906545-e9aae111-2739-4fbd-930c-43114661b7d0.jpeg)
+ 
+ ![image](https://user-images.githubusercontent.com/113164986/236613332-54e3ab6e-29a2-4fa6-98f0-d002c96bbe34.png)
 
-### Promo Video:
-https://user-images.githubusercontent.com/113662146/226891444-2b7953b9-5e77-49cf-91c9-787524cf003f.mp4
+![image](https://user-images.githubusercontent.com/113164986/236613262-aca525f6-5013-4417-a593-a156148b98e2.png)
 
 
 ### OutPut Video
 https://user-images.githubusercontent.com/113662146/226954722-c03ed411-ae9f-40d9-b21f-5ad26446a6bf.mp4
 
 
-### Project Preparation Video
-https://user-images.githubusercontent.com/113662146/226965833-d47247ec-a314-4f34-bd35-d97e2dbeca58.mp4
 
 
 
