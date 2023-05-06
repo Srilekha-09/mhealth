@@ -1,14 +1,10 @@
 ### IntelOneApi-Hackathon
-# Intel OneApi Hackathon- Team "DEBUG THUGS"-Smart Belt For Spinal Diseases
+# Intel OneApi Hackathon- Team "Tech Squad"-Mhealth App with Smart Belt For Spinal Diseases
 #### The Intel OneAPI hackathon is a programming contest that tests programmers' ability to design original solutions utilizing the OneAPI platform. OneAPI is a unified programming style that enables programmers to create code that effectively executes on many hardware platforms, such as CPUs, GPUs, and FPGAs.The OneAPI platform, which offers tools, libraries, and APIs for creating high-performance, cross-architecture apps, will be made available to hackathon participants. They will get the chance to work on a variety of projects, from developing new apps from scratch to optimizing already existing ones.The hackathon may be available to individuals or teams and is often run by Intel or in partnership with a partner organization. Typically, the participants are given a certain period of time—a weekend or a week, for example—to create their answers and submit them for evaluation.
 
-### Team Debug Thugs
+### Team Tech Squad
 
-#### Anvin Shaiju
-#### Jordan MC
-#### Manu p Jose
-#### Ashwini
-#### Shaik Nabeel
+####Madupu Srilekha
 
 
  
