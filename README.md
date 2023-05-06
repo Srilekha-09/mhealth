@@ -6,6 +6,12 @@
 
 ####Madupu Srilekha
 
+### Theme
+
+####Healthcare for Undeserved Communities
+
+Underserved communities often face numerous barriers in accessing quality healthcare, including limited infrastructure, lack of medical resources, and geographic isolation. Recognizing these challenges, our team set out to develop an innovative solution that leveraged oneAPI technologies to empower individuals in underserved communities with improved healthcare services.
+
 ![image](https://user-images.githubusercontent.com/113164986/236612911-a2bae968-1b7d-4bba-98de-138fd7bd7916.png)
 
 
@@ -148,6 +154,10 @@ https://developer.android.com/ndk/guides/
 ### OutPut Video
 https://user-images.githubusercontent.com/113662146/226954722-c03ed411-ae9f-40d9-b21f-5ad26446a6bf.mp4
 
+
+### Why the theme is opt to the prototype I developed
+
+mHealth app integrated with smart belts offer underserved communities a means to access health education and personalized exercise guidance for managing spinal diseases.These app provide remote monitoring capabilities, allowing individuals to securely transmit their spinal data to healthcare professionals for assessment and guidance.By leveraging wearable technology and sensors in smart belt, users can track their spinal alignment, posture, and movement patterns, empowering them to detect abnormalities or changes in their condition.The data collected from smart belt can be analyzed using machine learning algorithm to provide data-driven insights and predictive suggestions for preventive measures or interventions.Overall, the combination of mHealth app and smart belt has the potential to revolutionize spinal disease management in underserved communities, improving access to healthcare, promoting self-management, and facilitating informed decision-making by healthcare professionals.
 
 
 
